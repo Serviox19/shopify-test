@@ -1,0 +1,12 @@
+@charset 'UTF-8';
+
+// Settings
+@import './boilerplate';
+
+// Core
+@import 'core/base';
+
+//Sections
+@import 'sections/header';
+@import 'sections/product-gallery';
+@import 'sections/product-info';

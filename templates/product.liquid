@@ -1,5 +1,12 @@
 {% layout "template.liquid" %}
 
 {% block content %}
-    <h1>{{ product.title | capitalize }}</h1>
+  <h1>{{ product.title | capitalize }}</h1>
+
+  <div class="product-display">
+    <div class="product-display__wrapper">
+      <div class="product-gallery"></div>
+      <div class="product-info"></div>
+    </div>
+  </div>
 {% endblock %}
