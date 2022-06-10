@@ -14,14 +14,19 @@
   <title>First &amp; Third test</title>
   <meta name="description" content="Shopify Test">
 
-  <link rel="stylesheet" href="/dist/style.css">
-  <script src="" defer></script>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" type="text/css" href="/vendor/slick.css" />
 </head>
 
 <body class="">
   <main id="main" role="main">
     {% block content %}{% endblock %}
   </main>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="/vendor/slick.min.js"></script>
+  <script type="text/javascript" src="/script.js"></script>
 </body>
 
 </html>

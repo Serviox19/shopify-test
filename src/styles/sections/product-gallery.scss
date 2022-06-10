@@ -1,0 +1,30 @@
+.product-media {
+  width: 100%;
+  max-width: 100vw;
+  margin-bottom: 24px;
+
+  @include desktop-up {
+    width: 50%;
+    margin-right: 3%;
+  }
+}
+
+.product-media__wrapper {
+  flex: 1;
+  position: relative;
+}
+
+.product-media__gallery {
+
+  .slide-wrapper {
+    @include desktop-up {
+      cursor: grab;
+    }
+  }
+}
+
+.slide-wrapper img {
+  width: 100%;
+  object-fit: cover;
+  object-fit: center;
+}

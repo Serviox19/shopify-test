@@ -1,0 +1,39 @@
+html {
+  font-size: 16px;
+  line-height: 1.5;
+  overflow-y: scroll;
+  min-height: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  font-family: $font-primary;
+  font-display: normal;
+  color: $color-black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+table {
+  width: 100%;
+}
+
+// Product
+.product-display {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 40px 0;
+}
+
+.product-display__wrapper {
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  max-width: $breakpoint-max;
+  margin: 0 auto;
+
+  @include desktop-up {
+    flex-direction: row;
+  }
+}
