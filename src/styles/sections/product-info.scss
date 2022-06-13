@@ -1,0 +1,121 @@
+.product-info {
+  max-width: 420px;
+}
+
+.product-title {}
+
+.product-info__price {
+  display: inline-flex;
+  margin: 0.8rem 0;
+
+  .price, .before-price {
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+  }
+
+  .before-price {
+    text-decoration: line-through;
+    color: $color-grey-800;
+    margin-left: 0.75rem;
+  }
+}
+
+.product-description {
+  margin-bottom: 30px;
+
+  p {
+    margin-bottom: 10px;
+  }
+}
+
+.product-form__options-header {
+  font-size: 1rem;
+  font-weight: 500;
+  color: $color-black;
+}
+
+.product-form__options {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: rem(10);
+  padding: 1rem 0 1.5rem;
+}
+
+.product-form__option {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: $color-white;
+  color: $color-black;
+  border: solid 1px $color-grey-600;
+  border-radius: rem(5);
+  font-size: rem(12);
+  font-weight: 600;
+
+  &.selected {
+    border: solid 1.5px $color-black;
+  }
+
+  &:disabled {
+    background-color: $color-grey-500;
+    color: $color-grey-600;
+  }
+}
+
+.product-form__purchase {
+  display: flex;
+  align-items: stretch;
+
+  .select {
+    display: grid;
+    grid-template-areas: "select";
+    align-items: center;
+    position: relative;
+    width: rem(32);
+    height: rem(32);
+    border: 1px solid $color-grey-600;
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+    font-size: 1.25rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: #fff;
+    background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+
+    select,
+    &::after {
+      grid-area: select;
+      text-align: center;
+    }
+  }
+
+  .product-form__btn {
+    display: inline-flex;
+    flex: 1;
+    background: $color-black;
+    color: $color-white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    letter-spacing: 0.3px;
+    border-radius: 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background: $color-white;
+      color: $color-black;
+      border: solid 1px $color-black;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
